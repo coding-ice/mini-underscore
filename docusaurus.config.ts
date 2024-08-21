@@ -3,9 +3,9 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-  title: "polyhedra develop a document",
-  tagline: "develop a document",
-  favicon: "img/favicon.ico",
+  title: "underscore 源码分析",
+  tagline: "source analysis",
+  favicon: "img/favicon.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -13,8 +13,8 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  organizationName: "polyhedra",
-  projectName: "zkbridge-lib",
+  organizationName: "coding-ice",
+  projectName: "underscore-analyse",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -22,25 +22,15 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          routeBasePath: "/",
         },
-        theme: {
-          customCss: "./src/css/custom.css",
-        },
+        blog: false,
       } satisfies Preset.Options,
     ],
   ],
@@ -48,21 +38,15 @@ const config: Config = {
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     colorMode: {
-      defaultMode: "dark",
-      disableSwitch: true,
+      defaultMode: "light",
+      // disableSwitch: true,
     },
     navbar: {
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
-        {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "guide",
-        },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
@@ -72,13 +56,33 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Polyhedra Network. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} coding-ice. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          // /docs/oldDoc -> /docs/newDoc
+          {
+            from: "/docs",
+            to: "/docs/crypto",
+          },
+          // Redirect from multiple old paths to the new path
+          {
+            to: "/docs/newDoc2",
+            from: ["/docs/oldDocFrom2019", "/docs/legacyDocFrom2016"],
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 export default config;
