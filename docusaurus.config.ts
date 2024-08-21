@@ -63,26 +63,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-
-  plugins: [
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          {
-            from: "/docs",
-            to: "/docs/crypto",
-          },
-          // Redirect from multiple old paths to the new path
-          {
-            to: "/docs/newDoc2",
-            from: ["/docs/oldDocFrom2019", "/docs/legacyDocFrom2016"],
-          },
-        ],
-      },
-    ],
-  ],
 };
 
 export default config;
