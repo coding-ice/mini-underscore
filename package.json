@@ -44,9 +44,9 @@
   "engines": {
     "node": ">=18.0"
   },
-  "homepage": "https://underscore-analyse.vercel.app/",
+  "homepage": "https://mini-underscore.vercel.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coding-ice/underscore-analyse"
+    "url": "https://github.com/coding-ice/mini-underscore"
   }
 }
