@@ -1,41 +1,5 @@
-# Website
+# 从 0 实现一个 mini-underscore
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+我们日常工作都是和"框架"打交道（vue/ react），学习 api 用法，学习"框架"源码。"框架"的源码就好像是人人追捧的武林秘籍，觉得只要翻阅过源码就会让自己功力大涨，本就如此吗？
+这些"框架"的本质：万变不离其宗，也只是 js 代码而已，所以才有了这一个仓库。无论是面试手写，翻阅“框架”源码，还是让自己的基础更加扎实，从这里都可以找到答案。接下来，我们就从 0 实现一个 mini-underscore。
+如有错误，请指点一二，如果帮到你了，就给个 star 吧～
