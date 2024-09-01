@@ -4,7 +4,8 @@ title: each
 slug: /each
 ---
 
-### `each(list, iteratee, [context])`
+<big><b>`each(list, iteratee, [context])`</b></big>
+&emsp;
 
 ```ts
 function each(obj, iteratee, context) {

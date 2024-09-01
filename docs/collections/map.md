@@ -4,7 +4,8 @@ title: map
 slug: /map
 ---
 
-### `map(list, iteratee, [context])`
+<big><b>`map(list, iteratee, [context])`</b></big>
+&emsp;
 
 ```ts
 function map(obj, iteratee, context) {
