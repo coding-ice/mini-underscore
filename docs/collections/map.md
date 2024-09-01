@@ -11,7 +11,7 @@ slug: /map
 function map(obj, iteratee, context) {
   const isArray = Array.isArray(obj),
     keys = !isArray && Object.keys(obj),
-    len = isArray ? obj.length : keys.length,
+    len = (keys || obj).length,
     res = Array(len);
 
   for (let i = 0; i < len; i++) {
