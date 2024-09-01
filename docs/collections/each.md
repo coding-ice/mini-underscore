@@ -4,9 +4,6 @@ title: each
 slug: /each
 ---
 
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-
 ### `each(list, iteratee, [context])`
 
 ```ts
@@ -29,7 +26,7 @@ function each(obj, iteratee, context) {
 }
 ```
 
-我们开始走读代码
+走读代码
 
 1. 如果是数组，调用 `iteratee` 时，实参分别为 `value index obj`
 2. 如果是对象，调用 `iteratee` 时，实参分别为 `value key obj`
