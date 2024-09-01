@@ -28,3 +28,9 @@ function each(obj, iteratee, context) {
   return obj;
 }
 ```
+
+我们开始走读代码
+
+1. 如果是数组，调用 `iteratee` 时，实参分别为 `value index obj`
+2. 如果是对象，调用 `iteratee` 时，实参分别为 `value key obj`
+3. 调用 `iteratee`，采用 `apply` ，把 `ctx` 绑定到 `iteratee` 中
