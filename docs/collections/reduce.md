@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="1" label="reduce" default>
   ```ts
+    // 1: 从左边开始
     const reduce = _createReduce(1);
     const total = reduce([1, 2, 3, 4, 5], (memo, val) => memo + val); // 15
   ```
