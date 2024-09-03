@@ -1,10 +1,10 @@
 ---
 label: 集合
-title: reduce
-slug: /reduce
+title: reduceRight
+slug: /reduceRight
 ---
 
-<big><b>`reduce(list, iteratee, [memo], [context])`</b></big>
+<big><b>`reduceRight(list, iteratee, [memo], [context])`</b></big>
 &emsp;
 
 import Tabs from '@theme/Tabs';
@@ -13,8 +13,16 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="1" label="reduce" default>
   ```ts
-    const reduce = _createReduce(1);
-    const total = reduce([1, 2, 3, 4, 5], (memo, val) => memo + val); // 15
+    // -1: 从右边开始
+    const reduceRight = _createReduce(-1);
+    const targetList = reduceRight(
+      [
+        [1, 2],
+        [3, 4],
+      ],
+      (memo, list) => memo.concat(list)
+    ); // [3, 4, 1, 2]
+    
   ```
   </TabItem>
   <TabItem value="2" label="_createReduce" default>
