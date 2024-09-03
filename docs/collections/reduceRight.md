@@ -2,6 +2,7 @@
 label: 集合
 title: reduceRight
 slug: /reduceRight
+sidebar_position: 4
 ---
 
 <big><b>`reduceRight(list, iteratee, [memo], [context])`</b></big>

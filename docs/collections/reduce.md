@@ -2,6 +2,7 @@
 label: 集合
 title: reduce
 slug: /reduce
+sidebar_position: 3
 ---
 
 <big><b>`reduce(list, iteratee, [memo], [context])`</b></big>

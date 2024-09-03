@@ -2,6 +2,7 @@
 label: 集合
 title: map
 slug: /map
+sidebar_position: 2
 ---
 
 <big><b>`map(list, iteratee, [context])`</b></big>

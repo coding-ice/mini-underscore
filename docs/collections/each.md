@@ -2,6 +2,7 @@
 label: 集合
 title: each
 slug: /each
+sidebar_position: 1
 ---
 
 <big><b>`each(list, iteratee, [context])`</b></big>
