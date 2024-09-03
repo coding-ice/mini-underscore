@@ -19,7 +19,7 @@ function _createReduce(dir: number) {
   };
 
   return function (obj, iteratee, memo?, context?) {
-    const initial = arguments.length >= 3; // 箭头函数没有args，会寻找上一层
+    const initial = arguments.length >= 3;
 
     return reducer(obj, iteratee.bind(context), memo, initial);
   };
