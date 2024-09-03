@@ -19,9 +19,7 @@ describe("map", () => {
 
     expect(result).toEqual([2, 4, 6]);
   });
-});
 
-describe("map", () => {
   it("should support obj and ctx", () => {
     const fn = jest.fn((val: number, ...rest) => val * 2);
 

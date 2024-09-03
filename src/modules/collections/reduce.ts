@@ -1,8 +1,3 @@
-function reduce(a) {
-  console.log(arguments.length);
-}
+import createReduce from "./_createReduce";
 
-// @ts-expect-error
-reduce(1, 2, 3);
-
-// export default reduce;
+export default createReduce(1);
