@@ -67,10 +67,8 @@ import TabItem from '@theme/TabItem';
         return key;
       }
     }
-
-}
-
-```
+  }
+  ```
 </TabItem>
 </Tabs>
-```
+
