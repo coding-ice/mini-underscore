@@ -1,6 +1,6 @@
 import each from "./each";
 
-function reject(list, predicate, context) {
+function reject(list, predicate, context?) {
   const results = [];
 
   each(list, (value, key, obj) => {
