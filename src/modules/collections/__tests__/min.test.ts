@@ -1,5 +1,5 @@
 import { describe, expect, it } from "@jest/globals";
-import max from "../max";
+import min from "../min";
 
 describe("pluck", () => {
   it("should work when has iteratee", () => {
@@ -9,15 +9,15 @@ describe("pluck", () => {
       { name: "curly", age: 60 },
       { name: "ice", age: 25 },
     ];
-    const result = max(stooges, function (stooge) {
+    const result = min(stooges, function (stooge) {
       return stooge.age;
     });
-    expect(result).toEqual({ name: "curly", age: 60 });
+    expect(result).toEqual({ name: "ice", age: 25 });
   });
 
   it("should work when not iteratee", () => {
     const list = [10, 20, 30];
-    const result = max(list);
-    expect(result).toBe(30);
+    const result = min(list);
+    expect(result).toBe(10);
   });
 });
