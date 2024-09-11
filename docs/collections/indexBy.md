@@ -5,14 +5,14 @@ slug: /indexBy
 sidebar_position: 18
 ---
 
-<big><b>`groupBy(list, iteratee, [context])`</b></big>
+<big><b>`indexBy(list, iteratee, [context])`</b></big>
 &emsp;
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-  <TabItem value="1" label="groupBy" default>
+  <TabItem value="1" label="indexBy" default>
   ```ts
   import group from "./group";
 
