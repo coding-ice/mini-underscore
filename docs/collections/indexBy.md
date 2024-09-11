@@ -1,8 +1,8 @@
 ---
 label: 集合
-title: groupBy
-slug: /groupBy
-sidebar_position: 17
+title: indexBy
+slug: /indexBy
+sidebar_position: 18
 ---
 
 <big><b>`groupBy(list, iteratee, [context])`</b></big>
