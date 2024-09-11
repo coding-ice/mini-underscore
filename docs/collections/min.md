@@ -1,7 +1,7 @@
 ---
 label: 集合
-title: max
-slug: /max
+title: min
+slug: /min
 sidebar_position: 16
 ---
 
