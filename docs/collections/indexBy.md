@@ -17,10 +17,8 @@ import TabItem from '@theme/TabItem';
   import group from "./group";
 
   export default group((result, value, key) => {
-    // 5. 如果 value 存在 直接 push
-    if (result[key]) result[key].push(value);
-    // 6. 不存在 赋值 [value]
-    else result[key] = [value];
+    // 5. 直接赋值即可
+    result[key] = value;
   });
 
   ```
