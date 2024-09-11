@@ -29,9 +29,7 @@ function groupBy(obj, iteratee, context?) {
     const values = result[key];
     // 5. 不存在，创建数组，push值，赋值
     if (!values) {
-      const items = [];
-      items.push(value);
-      result[key] = items;
+      result[key] = [value];
     } else {
       // 6. 直接push
       values.push(value);
