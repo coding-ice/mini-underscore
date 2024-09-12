@@ -1,8 +1,8 @@
 ---
 label: 集合
-title: indexBy
-slug: /indexBy
-sidebar_position: 18
+title: countBy
+slug: /countBy
+sidebar_position: 19
 ---
 
 <big><b>`indexBy(list, iteratee, [context])`</b></big>
@@ -12,13 +12,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-  <TabItem value="1" label="indexBy" default>
+  <TabItem value="1" label="countBy" default>
   ```ts
   import group from "./group";
 
   export default group((result, value, key) => {
-    // 5. 直接赋值即可
-    result[key] = value;
+    // 5. 如果 key 存在 +1，否 = 1
+    if (result[key]) result[key] += 1;
+    else result[key] = 1;
   });
 
   ```
@@ -44,7 +45,7 @@ import TabItem from '@theme/TabItem';
         behavior(result, value, key);
       });
 
-      // 6. 返回对象
+      // 6. 返回结果
       return result;
     };
 }
