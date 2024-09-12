@@ -1,27 +1,17 @@
 ---
 label: 集合
-title: shuffle
-slug: /shuffle
-sidebar_position: 20
+title: sample
+slug: /sample
+sidebar_position: 21
 ---
 
-<big><b>`shuffle(list)`</b></big>
+<big><b>`sample(list, [n])`</b></big>
 &emsp;
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-  <TabItem value="0" label="shuffle" default>
-  ```ts
-  import sample from "./sample";
-
-  function shuffle(obj) {
-    // 0. 调用函数
-    return sample(obj, Infinity);
-  }
-  ```
-  </TabItem>
   <TabItem value="1" label="sample">
   ```ts
   function sample(obj, n?) {
