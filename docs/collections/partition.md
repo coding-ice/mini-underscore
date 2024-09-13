@@ -1,7 +1,7 @@
 ---
 label: 集合
-title: size
-slug: /size
+title: partition
+slug: /partition
 sidebar_position: 23
 ---
 
