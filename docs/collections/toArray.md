@@ -9,13 +9,10 @@ sidebar_position: 22
 &emsp;
 
 ```ts
-function toArray(obj) {
-  // 数组 || 类数组对象
-  if (Array.isArray(obj) || obj?.length) {
-    return Array.from(obj);
-  }
-
-  // 对象，拿 value 即可
-  return map(obj, (val) => val);
+function size(list) {
+  // 1. 无效值 -> 0
+  if (list == null) return 0;
+  // 2. 数组返回长度，否 keys 的长度
+  return Array.isArray(list) ? list.length : Object.keys(list).length;
 }
 ```
